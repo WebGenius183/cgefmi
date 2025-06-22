@@ -124,7 +124,6 @@ button a:hover {
 
 .hero .content h1 {
     font-size: 50px;
-    padding: 20px;
     color: white;
 }
 
@@ -262,7 +261,7 @@ button a:hover {
     width: 400px;
     min-height: 300px;
     padding: 40px;
-    background: linear-gradient(rgb(192, 82, 9), rgb(224, 21, 21));
+    background: linear-gradient(rgb(202, 102, 34), rgb(105, 22, 22));
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -291,8 +290,7 @@ button a:hover {
     color: #fff;
 }
 
-.card .text h1,
-.card .text h2 {
+.card .text h2, h1{
     text-align: center;
 }
 
@@ -309,7 +307,6 @@ button a:hover {
 }
 
 /* Video Section */
-
 .vidi{
     padding-top: 10px;
     display: grid;
@@ -396,13 +393,10 @@ footer .socials img {
     .hamburger {
         display: block;
     }
-
-    .hero {
-        height: 70%;
-    }
+    
 
     .hero .content h1 {
-        font-size: 40px;
+        font-size: 35px;
         text-align: center;
     }
 
