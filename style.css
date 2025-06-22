@@ -11,6 +11,7 @@ button{
     height: 100%;
     text-align: center;
     background: url(./asset/hero.jpg);
+    background-repeat: no-repeat;
     background-position: center;
     position: relative;
     z-index: 2;
