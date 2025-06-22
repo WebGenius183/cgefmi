@@ -1,42 +1,69 @@
-*{
-    padding: 0%;
+/* Base Reset */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-button{
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* General Styles */
+button {
     width: 120px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-.header{
+button:hover {
+    background-color: brown;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+}
+
+button a:hover {
+    color: white;
+    transition: 0.5s ease-in;
+}
+
+/* Header */
+.header {
     height: 100%;
     text-align: center;
-    background: url(./asset/hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(./asset/hero.jpg) no-repeat center;
     position: relative;
     z-index: 2;
 }
 
-.header::before{
+.header::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     background: rgba(31, 20, 17, 0.6);
     z-index: -1;
 }
 
+/* Navigation */
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: auto;
     padding: 10px;
     flex-wrap: wrap;
     z-index: 100;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .logo img {
@@ -48,8 +75,6 @@ button{
     display: flex;
     gap: 15px;
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .menu ul li a {
@@ -73,7 +98,6 @@ button{
 }
 
 .menu ul li a:hover::before {
-    transition: 0.5s;
     width: 100%;
     background: orangered;
 }
@@ -83,36 +107,6 @@ button{
     gap: 10px;
 }
 
-button {
-    padding: 10px;
-    background: transparent;
-    border-radius: 15px;
-    border: 2px solid #fff;
-    color: white;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #fff;
-}
-
-button a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: bolder;
-}
-
-button a:hover {
-    transition: 0.5s ease-in;
-    color: white;
-}
-
-
-button:hover {
-    transition: 0.5s;
-     background-color: brown;
-}
-
 .hamburger {
     display: none;
     font-size: 28px;
@@ -120,131 +114,148 @@ button:hover {
     color: white;
 }
 
-
-.hero{
+/* Hero Section */
+.hero {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hero .content h1{
+.hero .content h1 {
     font-size: 50px;
     padding: 20px;
     color: white;
 }
 
-.about{
+/* About Section */
+.about {
     display: flex;
     padding: 50px;
     align-items: center;
-    width: 70%;
     justify-content: center;
+    width: 100%;
     margin: auto;
-    align-content: center;
+    flex-wrap: wrap;
 }
-.image img{
+
+.image img {
     height: 200px;
     width: 200px;
 }
 
-.content{
+.content {
     width: 70%;
     padding: 20px;
 }
 
-.content h1{
+.content h1 {
     font-size: 30px;
     padding-bottom: 10px;
-
 }
 
-.content h2{
+.content h2 {
     font-size: 25px;
     font-weight: 500;
     padding-bottom: 10px;
 }
 
-.about button{
+.about button {
     color: brown;
     border-color: brown;
 }
 
-.about button:hover{
-    transition: 0.5s ease-in;
+.about button:hover {
     color: #fff;
     background-color: brown;
 }
 
-.about button a{
+.about button a {
     color: white;
 }
 
-.about a:hover{
-    color: #fff;
-    transition: 0.5s;
-}
-
-.banner{
-    background: url(./asset/1.jpg);
+.banner {
+    background: url(./asset/1.jpg) no-repeat center;
     display: flex;
     height: 100px;
-    background-position: center;
-    background-size: auto;
-    background-repeat: no-repeat;
     align-items: center;
     position: relative;
     z-index: 2;
     justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0;
     padding: 20px;
 }
 
-.banner::before{
+.banner::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     background: rgba(31, 20, 17, 0.6);
     z-index: -1;
 }
 
-.banner h1{
+.banner h1 {
     font-size: 50px;
     color: white;
     padding-left: 50px;
 }
 
-.banner button{
-    transition: 0.5s ease-in;
-    margin-left: 50px;
-    margin-right: 50px;
+.banner button {
+    margin: 0 50px;
 }
 
-.testimony{
+/* Testimonials */
+.testimony {
     margin-top: 50px;
     justify-content: center;
 }
 
-.title h1{
+.title h1 {
     font-size: 40px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, sans-serif;
     text-align: center;
     text-decoration: underline;
     font-weight: 400;
 }
 
-.container{
-    display: flex;
+.testimonials {
+    padding: 30px;
+    background-image: url(./asset/testimonies.jpg);
 }
 
-.card{
+.test {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.testi {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimo {
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.testimo h2 {
+    padding-bottom: 10px;
+}
+
+/* Notification Card */
+.card {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
     min-height: 300px;
@@ -252,118 +263,74 @@ button:hover {
     background: linear-gradient(rgb(192, 82, 9), rgb(224, 21, 21));
     border-radius: 10px;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    transition: .5s ease-in;
+    align-items: center;
+    transition: 0.5s ease-in;
     visibility: hidden;
-    opacity: 1;
+    opacity: 0;
 }
 
-.notification{
-    padding-bottom: 50px;
-}
-
-.card.active{
+.card.active {
     visibility: visible;
     opacity: 1;
 }
 
-.card .notification, .card .text{
+.card .notification, 
+.card .text {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.card .notification h1{
+.card .notification h1 {
     font-size: 2rem;
     font-weight: 500;
     color: #fff;
 }
 
-
-.card .text h2,h1{
-    
+.card .text h1,
+.card .text h2 {
     text-align: center;
 }
 
-.card .close{
+.card .close {
     position: absolute;
     top: 20px;
     right: 20px;
     cursor: pointer;
 }
 
-.card .close img{
+.card .close img {
     width: 25px;
-    color: #ffff;
+    color: #fff;
 }
 
-.testimonials{
-    padding: 30px;
-    background-image: url(./asset/testimonies.jpg);
-}
-
-.test{
-    color: white;
+/* Video Section */
+.container {
     display: flex;
-    justify-content: center;
-    text-decoration: underline;
-}
-
-.testi{
-    display: flex;
-    padding: 30px;
-    justify-content: space-between;
-}
-
-.testimo{
-    background-color: white;
-    box-shadow: 2px whitesmoke;
-    width: 500px;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.6);
-}
-
-.testimo h2{
-    padding-bottom: 10px;
-}
-
-.title h1{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.container{
+    flex-wrap: wrap;
     padding: 20px;
     border-bottom: 2px solid rgb(192, 192, 192);
+    box-shadow: 0px 2px 5px #d1d1d1;
 }
 
-.vid{
+.vid {
     padding-right: 10px;
 }
 
-.container{
-    box-shadow: 5px 8f8f8f;
-}
-
-.container .text{
-    align-content: top;
+.container .text {
     font-size: 25px;
     font-weight: 500;
     padding: 10px;
-    
-}
-
-.container .text:hover{
-    transition: 0.5ss ease-in;
-    font-weight: bold;
     cursor: pointer;
 }
 
-.text a{
+.container .text:hover {
+    font-weight: bold;
+}
+
+.text a {
     color: black;
 }
 
@@ -372,7 +339,8 @@ button:hover {
     font-size: 20px;
 }
 
-footer{
+/* Footer */
+footer {
     padding: 20px;
     background-color: rgb(88, 19, 19);
     backdrop-filter: blur(20px);
@@ -380,17 +348,17 @@ footer{
     text-align: center;
 }
 
-footer .text h1{
+footer .text h1 {
     font-size: 20px;
     padding: 5px;
 }
 
-footer .socials img{
+footer .socials img {
     padding: 5px;
     height: 20px;
 }
 
-/*Responsive*/
+/* Responsive Design */
 @media (max-width: 768px) {
     .menu,
     .not {
@@ -399,10 +367,9 @@ footer .socials img{
         flex-direction: column;
         text-align: center;
         margin-top: 10px;
-        
     }
 
-    .menu ul{
+    .menu ul {
         flex-direction: column;
     }
 
@@ -413,68 +380,62 @@ footer .socials img{
 
     .hamburger {
         display: block;
-        font-size: 28px;
-        cursor: pointer;
-        color: white;
     }
 
-    .hero{
+    .hero {
         height: 70%;
     }
 
-    .hero .content h1{
+    .hero .content h1 {
         font-size: 40px;
         text-align: center;
     }
 
-    .about{
+    .about {
         display: contents;
     }
 
-    .about .image{
+    .about .image {
         margin-top: 50px;
         text-align: center;
     }
 
-    .about .content{
+    .about .content {
         margin: auto;
         text-align: center;
     }
 
-    .banner h1{
+    .banner h1 {
         font-size: 30px;
-        padding-left: 0%;
+        padding-left: 10px;
         text-align: left;
     }
 
-    .banner button{
-        margin-left: auto;
-        margin-right: auto;
+    .banner button {
+        margin: 0 auto;
     }
 
-    .testi{
+    .testi {
         flex-direction: column;
     }
 
-    .testimo{
+    .testimo {
         font-size: 12px;
         width: auto;
-        margin-bottom: 20px;
     }
-    .container{
+
+    .container {
         display: block;
     }
 
-    .container .text{
+    .container .text {
         font-size: 20px;
         font-weight: 530;
-        padding-left: 0%;
+        padding-left: 0;
     }
 
-    iframe{
+    iframe {
         width: 90%;
         height: auto;
     }
-
-
 }
