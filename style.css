@@ -216,7 +216,6 @@ button a:hover {
     font-size: 40px;
     font-family: system-ui, sans-serif;
     text-align: center;
-    text-decoration: underline;
     font-weight: 400;
 }
 
@@ -229,7 +228,6 @@ button a:hover {
 .test {
     display: flex;
     justify-content: center;
-    text-decoration: underline;
 }
 
 .testi {
@@ -400,7 +398,7 @@ footer .socials img {
     
 
     .hero .content h1 {
-        font-size: 35px;
+        font-size: 30px;
         text-align: center;
     }
 
