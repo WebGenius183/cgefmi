@@ -236,6 +236,7 @@ button a:hover {
     display: flex;
     padding: 30px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .testimo {
@@ -368,7 +369,7 @@ footer .text h1 {
 
 footer .socials img {
     padding: 5px;
-    height: 20px;
+    height: 30px;
 }
 
 /* Responsive Design */
@@ -433,6 +434,7 @@ footer .socials img {
     }
 
     .testimo {
+        margin-left: 0;
         font-size: 12px;
         width: auto;
     }
