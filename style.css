@@ -458,4 +458,9 @@ footer .socials img {
         padding-top: 10px;
         grid-template-columns: 1fr;   
     }
+
+    footer .text h1 {
+    font-size: 15px;
+    padding: 5px;
+    }
 }
