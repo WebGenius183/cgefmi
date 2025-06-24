@@ -43,6 +43,7 @@ button a:hover {
     text-align: center;
     background: url(./asset/hero.jpg) no-repeat center;
     position: relative;
+    background-size: cover;
     z-index: 2;
 }
 
@@ -321,6 +322,8 @@ button a:hover {
     color: #fff;
 }
 
+
+
 /* Video Section */
 .vidi {
     padding-top: 10px;
@@ -510,4 +513,13 @@ footer .socials img {
     50%{
         transform: translateY(10px);
     }
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.show{
+    animation: slideInleft 2s ease-in;
+    opacity: 1;
 }
