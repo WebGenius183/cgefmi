@@ -390,6 +390,30 @@ footer .socials img {
     height: 30px;
 }
 
+/*About Us Page*/
+.aboutus{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    padding: 50px;
+    animation: bounce 7s ease-in infinite;
+}
+.aboutus .img img{
+    width: 250px;
+    border-radius: 20px;
+}
+
+.text{
+    margin: 20px;
+    align-content: center;
+}
+
+.text h2{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: justify;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .menu,
@@ -477,10 +501,16 @@ footer .socials img {
         grid-template-columns: 1fr;   
     }
 
+    .aboutus{
+        display: block;
+        text-align: center;
+    }
+
     footer .text h1 {
     font-size: 15px;
     padding: 5px;
     }
+
 }
 
 /*Animations*/
@@ -520,6 +550,6 @@ footer .socials img {
 }
 
 .show{
-    animation: slideInleft 2s ease-in;
+    animation: slideInleft 1.5s ease-in;
     opacity: 1;
 }
