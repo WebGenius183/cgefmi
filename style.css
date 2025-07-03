@@ -159,12 +159,12 @@ button a:hover {
 }
 
 .content h1 {
-    font-size: 30px;
+    font-size: 25px;
     padding-bottom: 10px;
 }
 
 .content h2 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     padding-bottom: 10px;
 }
@@ -403,15 +403,65 @@ footer .socials img {
     border-radius: 20px;
 }
 
+.text h1{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+span{
+    font-size: 020px;
+}
+
 .text{
     margin: 20px;
     align-content: center;
+}
+
+.symbols{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ffeeee;
+}
+
+.symbols h1{
+ font-size: 30px;
 }
 
 .text h2{
     font-weight: 500;
     font-size: 20px;
     text-align: justify;
+}
+
+.contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.box{
+    text-align: center;
+    padding: 30px;
+    border-bottom: 2px solid rgb(225, 225, 255);
+}
+
+.box h2{
+    padding: 20px;
+}
+
+
+.box img{
+    animation: bounce 7s ease-in infinite;
+    width: 100px;
+    border: 2px solid rgb(255, 172, 172);
+    border-radius: 100%;
+    padding: 20px;
+    background-color: #fff7f7;
 }
 
 /* Responsive Design */
@@ -482,7 +532,7 @@ footer .socials img {
     }
 
     .container {
-
+        justify-content: center;
         display: block;
     }
 
@@ -511,6 +561,13 @@ footer .socials img {
     padding: 5px;
     }
 
+    .contain{
+        display: block;
+    }
+
+    .text h2{
+        text-align: center;
+    }
 }
 
 /*Animations*/
