@@ -554,6 +554,7 @@ span{
     .aboutus{
         display: block;
         text-align: center;
+        padding: 10px;
     }
 
     footer .text h1 {
@@ -568,6 +569,11 @@ span{
     .text h2{
         text-align: center;
     }
+
+    .contain{
+        width: 100%;
+    }
+
 }
 
 /*Animations*/
