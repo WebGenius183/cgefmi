@@ -397,6 +397,7 @@ footer .socials img {
     justify-content: center;
     padding: 50px;
     animation: bounce 7s ease-in infinite;
+    margin-bottom: 30px;
 }
 .aboutus .img img{
     width: 250px;
