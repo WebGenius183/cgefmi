@@ -492,6 +492,208 @@ button a {
   margin-top: 10px;
 }
 
+/*Contact*/
+/* Contact Page Styles */
+
+.contact-intro {
+    padding: 60px 20px 30px;
+    text-align: center;
+    background-color: #fff5f5;
+}
+
+.contact-intro h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #b20000;
+}
+
+.contact-intro p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Contact Details Section */
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background-color: #fffdfd;
+    text-align: center;
+}
+
+.contact-details div {
+    flex: 1 1 250px;
+    margin: 10px;
+}
+
+.contact-details h3 {
+    color: #a1351e;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* Map */
+.map iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    margin-top: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #ffeeee;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 32px;
+    color: #b20000;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    font-family: inherit;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #a1351e;
+}
+
+/* Success Popup */
+.success-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 9999;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-intro h2,
+    .contact-form h2 {
+        font-size: 26px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 15px;
+    }
+}
+
+
+/*sermon page*/
+.sermon-title {
+  text-align: center;
+  padding: 60px 20px 20px;
+  background-color: #fff5f5;
+}
+
+.sermon-title h1 {
+  font-size: 40px;
+  color: brown;
+  font-weight: bold;
+}
+
+.sermon-title p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.sermon-page {
+  padding: 40px 20px;
+}
+
+.vidi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vidi .container {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease;
+}
+
+.vidi .container iframe {
+  width: 100%;
+  height: 220px;
+  border: none;
+}
+
+.vidi .text {
+  padding: 15px;
+  text-align: center;
+}
+
+.vidi .text a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+.vidi .text a:hover {
+  color: brown;
+}
+
+.vidi .text p {
+  font-size: 14px;
+  color: #777;
+}
+
+
 /* Footer */
 footer {
   padding: 20px;
