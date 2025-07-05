@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./asset/logo.png" type="image/x-icon" />
+  <script defer src="script.js"></script>
+  <title>CGEFMI | Contact</title>
+</head>
+<body>
+
+  <!-- Header Background & Navbar -->
+  <div class="header" style="background-image: url('./asset/backgound 2.JPG');">
+    <div class="nav">
+      <div class="logo">
+        <img src="./asset/logo.png" alt="Logo" />
+      </div>
+
+      <div class="hamburger" id="hamburger">☰</div>
+
+      <div class="menu" id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="sermon.html">Sermons</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+        </div>
+
+      <div class="not" id="buttons">
+        <a href="#"><button>Live</button></a>
+        <a href="#" onclick="notifPopup();"><button>Offering</button></a>
+      </div>
+    </div>
+
+    <!-- Offering Card Popup -->
+    <div class="card">
+      <div class="notification">
+        <h1>Account Details</h1>
+      </div>
+      <div class="text">
+        <h2>Zenith Bank</h2>
+        <h2>USD: 5072074133</h2>
+        <h2>Account Name: Christ Gospel Evangelical Fire Ministry Intl</h2>
+        <br />
+        <h1>or</h1>
+        <br />
+        <h2>NGN: 1225194189, 1228194850</h2>
+        <h2>Account Name: Christ Gospel Evangelical Fire Ministry Intl</h2>
+      </div>
+      <div class="close" onclick="notifPopup();">
+        <img src="./asset/close.svg" alt="Close" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Intro -->
+    <section class="contact-intro">
+      <h2>Get in Touch</h2>
+      <p>We’re delighted to connect — whether you have questions, need prayers, or want to learn more about our ministry.</p>
+    </section>
+
+    <!-- Contact Details -->
+    <section class="contact-details">
+      <div class="location">
+        <h3>Visit Us</h3>
+        <p>Oredegbe Estate, Elewedu Off, Abim Hotel, Ajose, Ibeshe Road, Ikorodu</p>
+      </div>
+      <div class="phone">
+        <h3>Phone Us</h3>
+        <p>+234 901 234 5678</p>
+      </div>
+      <div class="email">
+        <h3>Email Us</h3>
+        <p>christgospelefmi@gmail.com</p>
+      </div>
+    </section>
+
+    <!-- Google Map -->
+    <section class="map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.9096925021336!2d3.4924321142638426!3d6.619207995212675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b92d1c94c317f%3A0x7e3e6d12602e1cf4!2sIbeshe%2C%20Ikorodu!5e0!3m2!1sen!2sng!4v1719057727160" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+      <h2>Write Us</h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="return showSuccess()">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Success Message -->
+  <div id="successMessage" class="success-popup">
+    ✅ Your message has been sent! We’ll get back to you shortly.
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="logo">
+      <img src="./asset/logo.png" alt="Logo" />
+    </div>
+    <div class="text">
+      <h1>Christ Gospel Evangelical Fire Ministry International</h1>
+      <h1>Address: Oredegbe Estate, Elewedu Off, Abim Hotel, Ajose, Ibeshe Road, Ikorodu</h1>
+    </div>
+    <div class="socials">
+      <a href="https://www.facebook.com/share/1M3cspKkxR"><img src="./asset/icons/facebook.png" alt="Facebook" /></a>
+      <a href="https://www.instagram.com/cgefmi?igsh=bTYwbXpob28zOWx4"><img src="./asset/icons/instagram.png" alt="Instagram" /></a>
+      <a href="https://vm.tiktok.com/ZMSDAcQ5u/"><img src="./asset/icons/tik-tok.png" alt="TikTok" /></a>
+      <a href="https://youtube.com/@cgefmitv?si=ssFlxmLxMcJyL0_g"><img src="./asset/icons/youtube.png" alt="YouTube" /></a>
+    </div>
+  </footer>
+
+</body>
+</html>
