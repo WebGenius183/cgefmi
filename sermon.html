@@ -9,32 +9,59 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- Header Navigation -->
-  <div class="header" style="background-image: url('./asset/backgound 2.JPG');">
-    <div class="nav">
-      <div class="logo"><img src="./asset/logo.png" alt="Logo" /></div>
-      <div class="hamburger" id="hamburger">☰</div>
-      <div class="menu" id="menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="sermon.html">Sermons</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="not" id="buttons">
-        <a href="#"><button>Live</button></a>
-        <a href="#" onclick="notifPopup();"><button>Offering</button></a>
-      </div>
-    </div>
-  </div>
 
-  <!-- Title Section -->
-  <section class="sermon-title">
-    <h1>Sermons & Messages</h1>
-    <p>Watch powerful teachings and ministration from our services.</p>
-  </section>
+  <div class="header">
+        <div class="nav">
+            <div class="logo">
+                <img src="./asset/logo.png" alt="Logo">
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="sermons.html">Sermons</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="not" id="buttons">
+                <a href="#"><button>Live</button></a>
+                <a href="#" onclick="notifPopup();"><button>Offering</button></a>
+            </div>
+
+            <div class="card">
+            <div class="notification">
+                <h1>Account Details</h1>
+            </div>
+            <div class="text">
+                <h2>Zenith Bank</h2>
+                <h2>USD: 5072074133</h2>
+                <h2>Account Name: Christ Gospel Evangelical Fire Ministry Intl</h2>
+                <br>
+                <h1>or</h1>
+                <br>
+                <h2>NGN: 1225194189, 1228194850</h2>
+                <h2>Account Name: Christ Gospel Evangelical Fire Ministry Intl</h2>
+            </div>
+            <div class="close" onclick="notifPopup();">
+                <img src="./asset/close.svg" alt="">
+            </div>
+        </div>
+        </div>
+
+        <div class="hero">
+            <div class="content">
+                <h1>Sermons & Messages</h1>
+                  <p style="color: white;">Watch powerful teachings and ministration from our services.</p>
+            </div>
+        </div>
+    </div>
 
   <!-- Sermons Grid -->
   <section class="vidi sermon-page">
