@@ -9,11 +9,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+let popup = document.getElementById('popup');
 
-    function notifPopup(){
-        const notif = document.querySelector('.card');
-        notif.classList.toggle('active');
-    }
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) =>{
