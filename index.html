@@ -30,27 +30,24 @@
 
             <div class="not" id="buttons">
                 <a href="#"><button>Live</button></a>
-                <a href="#" onclick="notifPopup();"><button>Offering</button></a>
+                <a href="#"><button type="submit" onclick="openPopup()">Offering</button></a>
             </div>
-
-            <div class="card">
-            <div class="notification">
-                <h1>Account Details</h1>
-            </div>
-            <div class="text">
-                <h2>Zenith Bank</h2>
-                <h2>USD: 5072074133</h2>
-                <h2>Account Name: Christ Gospel Evangelical Fire Ministry Intl</h2>
-                <br>
-                <h1>or</h1>
-                <br>
-                <h2>NGN: 1225194189, 1228194850</h2>
-                <h2>Account Name: Christ Gospel Evangelical Fire Ministry Intl</h2>
-            </div>
-            <div class="close" onclick="notifPopup();">
-                <img src="./asset/close.svg" alt="">
-            </div>
+            
         </div>
+
+        <div class="popup" id="popup">
+                <div class="text">
+                    <h2>Account Details</h2>
+                    <h2>Zenith Bank</h2>
+                    <p>USD: 5072074133</p>
+                    <p>Account Name: Christ Gospel Evangelical Fire Ministry Intl</p>
+                    <br>
+                    <p>or</p>
+                    <br>
+                    <p>NGN: 1225194189, 1228194850</p>
+                    <p>Account Name: Christ Gospel Evangelical Fire Ministry Intl</p>
+                    <button onclick="closePopup()">Close</button>
+                </div>
         </div>
 
         <div class="hero">
